@@ -1,0 +1,35 @@
+print("Shirt = 1000, Trousers = 1000, Sneakers = 700 , Belt = 500, T-Shirts = 300")
+
+a = int(input("Enter the number of shirts bought : "))
+b = int(input("Enter the number of Trousers bought : "))
+c = int(input("Enter the number of Sneakers bought : "))
+d = int(input("Enter the number of Belts bought : "))
+e = int(input("Enter the number of T-shirts bought : "))
+
+total_amount= 1000*a +b*1000+c*700+d*500+e*300
+
+if(total_amount>5000):
+    Bill=total_amount-((total_amount*10)/100)
+elif(total_amount>3000):
+    Bill = total_amount-((total_amount * 8) / 100)
+elif(total_amount>2000):
+    Bill = total_amount - ((total_amount * 5) / 100)
+elif(total_amount>1000):
+    Bill = total_amount - ((total_amount * 3) / 100)
+else:
+    Bill=total_amount
+
+if(Bill>3000):
+    total=Bill+(Bill*10/100)
+else:
+    total=Bill+(Bill*18/100)
+
+print("Your shopping Bill is ",total)
+output:
+Shirt = 1000, Trousers = 1000, Sneakers = 700 , Belt = 500, T-Shirts = 300
+Enter the number of shirts bought : 2
+Enter the number of Trousers bought : 1
+Enter the number of Sneakers bought : 2
+Enter the number of Belts bought :  1
+Enter the number of T-shirts bought :  1
+Your shopping Bill is  5148.0
