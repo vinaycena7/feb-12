@@ -1,0 +1,16 @@
+a= int(input("Enter number 1 :"))
+b= int(input("Enter number 2 :"))
+
+if(a==b):
+    print("Equal")
+else:
+    print("Not equal")
+    if(a>b):
+        print("Number 1 is greater than number 2")
+    else:
+        print("Number 1 is smaller than number 2")
+output:        
+Enter number 1 : 4
+Enter number 2 : 5
+Not equal
+Number 1 is smaller than number 2
